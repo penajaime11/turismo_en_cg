@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo en Casas Grandes — Historia · Cultura · Naturaleza</title>
+    <link rel="icon" href="assets/img/logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/casas-grandes.css">
+    <meta name="description" content="Descubre Casas Grandes, Chihuahua: Paquimé, cerámica, naturaleza y alojamientos. Explora 27 lugares con fotografías y ubicación.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <a class="skip-link" href="#zonas">Saltar al catálogo</a>
+
+    <!-- ========== HEADER / NAVEGACIÓN ========== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#inicio" class="nav__logo">
+                <img src="assets/img/logo.jpg" alt="Turismo en Casas Grandes" class="nav__logo-img">
+                <span class="nav__brand">Casas Grandes<small>CHIHUAHUA, MÉXICO</small></span>
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#inicio" class="nav__link active">Inicio</a></li>
+                    <li class="nav__item"><a href="#acerca" class="nav__link">Acerca de</a></li>
+                    <li class="nav__item"><a href="#zonas" class="nav__link">Zonas Turísticas</a></li>
+                    <li class="nav__item"><a href="#galeria" class="nav__link">Galería</a></li>
+                    <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+                </ul>
+                <button class="nav__close" id="nav-close" aria-label="Cerrar menú"><span aria-hidden="true">×</span></button>
+            </div>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio" aria-label="Bienvenidos a Casas Grandes">
+        <img class="hero__background" src="assets/img/banner-paquime.jpeg" alt="Arquitectura de adobe de la zona arqueológica de Paquimé" fetchpriority="high">
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+            <p class="eyebrow hero__eyebrow">EL NORTE TIENE HISTORIA</p>
+            <h1 class="hero__title">Casas<br><span>Grandes.</span></h1>
+            <p class="hero__subtitle">Tierra de historias vivas.</p>
+            <p class="hero__description">Entre muros de adobe, cerámica y caminos de sierra,<br class="desktop-break"> descubre un rincón inolvidable de Chihuahua.</p>
+            <div class="hero__actions">
+                <a href="#zonas" class="btn btn--primary">Encuentra tu próximo destino</a>
+                <a href="#galeria" class="hero__secondary">Mira la galería</a>
+            </div>
+        </div>
+        <div class="hero__caption">PAQUIMÉ <span>Casas Grandes, Chihuahua</span></div>
+    </section>
+    <div class="regional-strip" aria-label="Experiencias de la región">
+        <span>Historia que permanece</span><span>Cerámica con identidad</span><span>Naturaleza por descubrir</span>
+    </div>
+
+    <section class="section acerca" id="acerca">
+        <div class="container acerca__editorial">
+            <figure class="acerca__photo"><img src="assets/img/ceramica-local.jpeg" alt="Cerámica decorada y detalles de la arquitectura local" loading="lazy"><figcaption>La tierra también se convierte en arte.</figcaption></figure>
+            <div class="acerca__copy">
+                <p class="eyebrow">EL ESPÍRITU DE CASAS GRANDES</p>
+                <h2>Un paisaje.<br>Muchas formas de vivirlo.</h2>
+                <p>La arquitectura de Paquimé, el trabajo de los alfareros y los paisajes de la sierra cuentan la historia de esta región del norte de México.</p>
+                <div class="acerca__stories">
+                    <div><h3>Huellas de adobe</h3><p>Acércate a la historia de Paquimé y a las culturas del norte.</p></div>
+                    <div><h3>Manos que crean</h3><p>Descubre la cerámica de Mata Ortiz y los espacios de arte local.</p></div>
+                    <div><h3>Rutas al aire libre</h3><p>Explora ríos, formaciones rocosas y caminos entre montañas.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ZONAS TURÍSTICAS ========== -->
+    <section class="section zonas" id="zonas">
+        <div class="container">
+            <p class="eyebrow">ELIGE TU CAMINO</p>
+            <h2 class="section__title">Lugares que vale la pena conocer.</h2>
+            <p class="section__subtitle">Historia, descanso y aventura. Encuentra un lugar y abre su ubicación.</p>
+            <label class="places-search" for="place-search"><span>Busca un lugar</span><input id="place-search" type="search" placeholder="Nombre o localidad…" autocomplete="off"></label>
+
+            <!-- Filtros -->
+            <div class="zonas__filters">
+                <button class="filter-btn active" data-filter="todos"><i class="fa-solid fa-border-all"></i> Todos</button>
+                <button class="filter-btn" data-filter="arqueologia"><i class="fa-solid fa-landmark"></i> Arqueología</button>
+                <button class="filter-btn" data-filter="naturaleza"><i class="fa-solid fa-mountain-sun"></i> Naturaleza</button>
+                <button class="filter-btn" data-filter="aventura"><i class="fa-solid fa-person-hiking"></i> Aventura</button>
+                <button class="filter-btn" data-filter="cultura"><i class="fa-solid fa-masks-theater"></i> Cultura</button>
+                <button class="filter-btn" data-filter="deportes"><i class="fa-solid fa-golf-ball-tee"></i> Deportes</button>
+                <button class="filter-btn" data-filter="hospedaje"><i class="fa-solid fa-bed"></i> Hospedaje</button>
+                <button class="filter-btn" data-filter="gastronomia"><i class="fa-solid fa-utensils"></i> Gastronomía</button>
+                <button class="filter-btn" data-filter="otros"><i class="fa-solid fa-location-dot"></i> Otros lugares</button>
+            </div>
+
+            <p id="places-count" class="zonas__count" aria-live="polite"></p>
+            <div class="zonas__grid" id="places-grid"></div>
+            <p id="places-empty" class="places-empty" hidden>No encontramos lugares con esa búsqueda. Prueba otro nombre o selecciona Todos.</p>
+            <noscript>Activa JavaScript para consultar el catálogo de lugares.</noscript>
+        </div>
+    </section>
+
+    <!-- ========== GALERÍA ========== -->
+    <section class="section galeria" id="galeria">
+        <div class="container">
+            <p class="eyebrow">POSTALES DEL NORTE</p><h2 class="section__title">Mira lo que te espera.</h2>
+            <p class="section__subtitle">Una mirada a la tierra, los espacios y los detalles de la región.</p>
+            <div class="galeria__grid">
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACTO ========== -->
+    <section class="section contacto" id="contacto">
+        <div class="container">
+            <h2 class="section__title">Contacto</h2>
+            <p class="section__subtitle">¿Tienes preguntas? ¡Escríbenos!</p>
+            <div class="contacto__grid">
+                <div class="contacto__info">
+                    <div class="contacto__info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div><h4>Ubicación</h4><p>Casas Grandes, Chihuahua, México</p></div>
+                    </div>
+                    <div class="contacto__info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div><h4>Teléfono</h4><p>+52 (636) 000 0000</p></div>
+                    </div>
+                    <div class="contacto__info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div><h4>Email</h4><p>info@turismocasasgrandes.com</p></div>
+                    </div>
+                    <div class="contacto__info-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div><h4>Horario de atención</h4><p>Lunes a Viernes: 9:00 - 18:00</p></div>
+                    </div>
+                    <div class="contacto__social">
+                        <a href="#" class="contacto__social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="contacto__social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="contacto__social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="contacto__social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form class="contacto__form" id="contact-form">
+                    <div class="form__group">
+                        <input type="text" class="form__input" id="name" placeholder=" " required>
+                        <label for="name" class="form__label">Nombre completo</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" class="form__input" id="email" placeholder=" " required>
+                        <label for="email" class="form__label">Correo electrónico</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="text" class="form__input" id="subject" placeholder=" ">
+                        <label for="subject" class="form__label">Asunto</label>
+                    </div>
+                    <div class="form__group">
+                        <textarea class="form__input form__textarea" id="message" placeholder=" " required></textarea>
+                        <label for="message" class="form__label">Mensaje</label>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">
+                        <i class="fa-solid fa-paper-plane"></i> Enviar mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <img src="assets/img/logo.jpg" alt="Turismo Casas Grandes" class="footer__logo">
+                    <p class="footer__text">Descubre la riqueza histórica, cultural y natural de Casas Grandes, Chihuahua.</p>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__title">Enlaces</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#acerca">Acerca de</a></li>
+                        <li><a href="#zonas">Zonas Turísticas</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__title">Zonas Populares</h4>
+                    <ul>
+                        <li><a href="https://maps.app.goo.gl/e6w6tLJ5i9VQgGoz6?g_st=iw" target="_blank">Paquimé</a></li>
+                        <li><a href="https://maps.app.goo.gl/hd9Yqyo6iQUAipGT9?g_st=iw" target="_blank">Cueva de la Olla</a></li>
+                        <li><a href="https://maps.app.goo.gl/d6so1ee41iahSe7t9?g_st=iw" target="_blank">Piloncillos</a></li>
+                        <li><a href="https://maps.app.goo.gl/7daN8Zu9T1MPnqTw5?g_st=iw" target="_blank">Casa de las Botellas</a></li>
+                    </ul>
+                </div>
+                <div class="footer__newsletter">
+                    <h4 class="footer__title">Newsletter</h4>
+                    <p>Recibe novedades y promociones turísticas.</p>
+                    <form class="footer__form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <a href="fuentes.html">Fuentes y créditos de las fotografías</a>
+                <p>&copy; 2026 Turismo en Casas Grandes. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== MODAL DE LUGAR ========== -->
+    <div class="modal" id="lugar-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal__overlay" id="modal-overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" id="modal-close" aria-label="Cerrar detalles"><span aria-hidden="true">×</span></button>
+            <div class="modal__header">
+                <span class="modal__tag" id="modal-tag">Categoría</span>
+                <h2 class="modal__title" id="modal-title">Nombre del lugar</h2>
+                <p class="modal__location"><i class="fa-solid fa-location-dot"></i> <span id="modal-location">Casas Grandes, Chihuahua</span></p>
+                <div class="modal__meta" id="modal-meta"></div>
+            </div>
+            <div class="modal__gallery">
+                <div class="modal__gallery-main">
+                    <img alt="" class="modal__gallery-img" id="modal-main-img" hidden>
+                    <p class="modal__empty" id="gallery-empty" hidden>Foto pendiente de identificar</p>
+                    <button class="modal__gallery-nav modal__gallery-nav--prev" id="gallery-prev" aria-label="Foto anterior"><span aria-hidden="true">‹</span></button>
+                    <button class="modal__gallery-nav modal__gallery-nav--next" id="gallery-next" aria-label="Foto siguiente"><span aria-hidden="true">›</span></button>
+                    <div class="modal__gallery-counter" id="gallery-counter">1 / 3</div>
+                </div>
+                <div class="modal__gallery-thumbs" id="gallery-thumbs"></div>
+                <p id="photo-note" class="photo-note"></p>
+                <a id="photo-source" class="photo-source" target="_blank" rel="noopener noreferrer" hidden></a>
+            </div>
+            <div class="modal__body">
+                <p class="modal__desc" id="modal-desc">Descripción del lugar...</p>
+            </div>
+            <div class="modal__footer">
+                <a href="#" class="btn btn--primary" id="modal-maps-link" target="_blank" rel="noopener">
+                    <i class="fa-solid fa-map-location-dot"></i> Abrir en Google Maps
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón volver arriba -->
+    <a href="#inicio" class="scroll-top" id="scroll-top"><i class="fa-solid fa-chevron-up"></i></a>
+
+    <script src="assets/js/places-data.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

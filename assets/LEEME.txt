@@ -1,0 +1,22 @@
+CASAS GRANDES — VERSIÓN CON BANNER Y NUEVA IMAGEN
+
+Extrae toda la carpeta gera y abre index.html. No necesita instalación.
+Conserva los 27 registros y todos los datos de ubicación del Excel.
+El Excel original y las fotografías entregadas permanecen sin cambios.
+
+Novedades: banner fotográfico de Paquimé, colores terracota y crema,
+detalles geométricos, presentación de la región, tarjetas renovadas,
+buscador por nombre/localidad, filtros y galería de imágenes.
+Las fotografías se guardan dentro de assets/img; fuentes.html documenta
+las imágenes encontradas en Internet y su procedencia. Las fotografías
+adicionales proporcionadas por el usuario se guardan en assets/img/user.
+Se completaron 14 lugares adicionales: los 27 registros tienen fotografías.
+Piedras Verdes usa una vista del río de la región, identificada como tal.
+
+El registro 12 se muestra como Cascada / Paraje La Micha por indicación del
+usuario; también incorpora la fotografía original que incluye su ubicación.
+Para añadir fotos posteriormente, edita images en assets/js/places-data.js.
+
+Internet se necesita para Google Maps, tipografías e iconos externos.
+El banner, las fotos, los filtros y el buscador funcionan con archivos locales.
+El formulario original de contacto es una demostración y no envía mensajes.
